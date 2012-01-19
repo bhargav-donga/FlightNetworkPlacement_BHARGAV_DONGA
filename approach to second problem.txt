@@ -1,0 +1,13 @@
+Approach to sencond problem...
+
+# First of all values of number of kids and value of N are asked to enter from user.
+# Then validate entered values.
+# Here arrangement of kids is in circular manner and this arrangement is implemented as CIRCULAR QUEUE in C language and each node representing a kid.
+# Each of kids is given a unique sequence number and attribute for elimination check.
+# After creating CIRCULAR QUEUE first 'While()' loop is executed until 'won==1'.
+# In  first 'while()' loop there is another loop that counts until given value of N.
+# In second loop there is variable that keeps the number of first counted kid.
+# Meanwhile if next node is already marked as eliminated then that node is skipped without increment in counter and next node is checked. 
+# Another check for matching current kid's number with previous kid's number for values of M<4 after the termination of second 'while()' loop
+# After second loop termination, the node at termination of second 'while()' loop is mark as eliminated i.e 'eliminated' attribute is set to 1.
+# If the next counted kid's number is the same as previous in second 'while()' loop, 'won' flag is set and that kid is declared as winner.   

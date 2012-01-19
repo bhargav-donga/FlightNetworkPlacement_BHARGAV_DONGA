@@ -1,0 +1,9 @@
+ 
+Approach to first program...
+
+# In this problem we have to implement Stack like functionality but with some restriction about data entry.
+# Stack functionality is implemented using LINKED LIST in C language.
+# Restriction about the next data that is to be entered is implemented usding IF ELSE statements.
+# PUSH and POP operations are written under SWITCH CASE block for easy user interaction.
+# Popped out nodes are deleted from stack and then linked to another linked list containg all popped out nodes in sequence.
+# popped out values are then printed in order they were popped from the stack.
