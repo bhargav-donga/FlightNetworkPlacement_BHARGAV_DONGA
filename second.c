@@ -9,7 +9,7 @@ struct node{
 };
 struct node *circle,*start,*temp;
 void main(){
-  int m,n,i,bool=1,count,number=0;
+  int m,n,i,bool=1,won,number=0;
   
   start=(struct node *)malloc(sizeof(struct node));
   circle=(struct node *)malloc(sizeof(struct node));
@@ -32,7 +32,7 @@ void main(){
          
 }
   circle->link=start;
-  while(count!=1){
+  while(won!=1){
     n=1;
     while(n!=(m-1)){
       while(start->eliminated==1){
@@ -49,7 +49,7 @@ void main(){
 	   //printf("\nexit2 %d & %d numbers ",number,start->num);
 	if(number==start->num){
 	 // printf("answer %d",start->num);
-	count=1;
+	won=1;
 	break;
 	  }
   
@@ -69,10 +69,10 @@ void main(){
 	  // printf("\nexit2 %d & %d numbers ",number,start->num);
 	if(number==start->num){
 	//  printf("answer %d",start->num);
-	count=1;
+	won=1;
 	break;
 	}}
-    if(count!=1){
+    if(won!=1){
       start->eliminated=1;
     printf("\n%d ELIMINATED ",start->num); 
     start=start->link;
